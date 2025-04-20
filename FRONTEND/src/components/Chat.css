@@ -1,0 +1,90 @@
+/* Chat.css */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1c1717;
+    padding: 2rem;
+    margin: 0;
+    box-sizing: border-box;
+    width:100%;
+  }
+  
+  .chat-form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    /* max-width: 500px; */
+    margin: 0 auto; /* Extra centering guarantee */
+  }
+  
+  /* Rest of your CSS remains the same */
+  .form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  }
+  
+  .message-input {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #357ab8;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 600px) {
+    .chat-container {
+      padding: 1.5rem;
+    }
+    
+    .chat-form {
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+  }
